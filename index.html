@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+<div class="main">
+    <input type="text" id='res' readonly>
+    <div class="btn">
+        <!-- Row 1 -->
+        <button aria-label="Clear" onclick="Clear()">C</button>
+        <button aria-label="Percentage" onclick="Solve('%')">%</button>
+        <button aria-label="Backspace" onclick="Back()">←</button>
+        <button aria-label="Divide" onclick="Solve('/')">/</button>
+        
+        <!-- Row 2 -->
+        <button aria-label="Seven" onclick="Solve('7')">7</button>
+        <button aria-label="Eight" onclick="Solve('8')">8</button>
+        <button aria-label="Nine" onclick="Solve('9')">9</button>
+        <button aria-label="Multiply" onclick="Solve('*')">x</button>
+
+        <!-- Row 3 -->
+        <button aria-label="Four" onclick="Solve('4')">4</button>
+        <button aria-label="Five" onclick="Solve('5')">5</button>
+        <button aria-label="Six" onclick="Solve('6')">6</button>
+        <button aria-label="Subtract" onclick="Solve('-')">-</button>
+
+        <!-- Row 4 -->
+        <button aria-label="One" onclick="Solve('1')">1</button>
+        <button aria-label="Two" onclick="Solve('2')">2</button>
+        <button aria-label="Three" onclick="Solve('3')">3</button>
+        <button aria-label="Add" onclick="Solve('+')">+</button>
+
+        <!-- Row 5 -->
+        <button aria-label="Double Zero" onclick="Solve('00')">00</button>
+        <button aria-label="Zero" onclick="Solve('0')">0</button>
+        <button aria-label="Decimal" onclick="Solve('.')">.</button>
+        <button aria-label="Equals" onclick="Result()">=</button>
+    </div>
+</div>
+<script src='index.js'></script>
+</body>
+</html>
